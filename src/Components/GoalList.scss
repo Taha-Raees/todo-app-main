@@ -1,0 +1,116 @@
+.list{
+    background-color:hsl(235, 24%, 19%);
+    width: 32.5rem;
+    border-radius: 5px;
+    ul{
+        
+        list-style: none;
+        padding: 10px 0px;
+        li{
+            padding: 10px 0px;
+            color: hsl(234, 39%, 85%);
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            position: relative;
+            cursor: pointer;
+            section {
+                display: flex;
+                align-items: center;
+        
+                input[type="checkbox"] {
+                  appearance: none;
+                  -webkit-appearance: none;
+                  border-radius: 50%;
+                  width: 20px;
+                  height: 20px;
+                  border: 1px solid #333;
+                  outline: none;
+                  transition: all 0.3s ease-in-out;
+                  margin-left: 10px;
+                  margin-right: 10px;
+                  cursor: pointer;
+        
+                  &:hover {
+                    border: 2px solid linear-gradient(
+                      to bottom right,
+                      hsl(192, 100%, 67%),
+                      hsl(280, 87%, 65%)
+                    ) !important;
+                  }
+                }
+        
+                input[type="checkbox"]:checked + .tick,
+                input[type="checkbox"].tick + .tick {
+                  position: absolute;
+                  width: 10px;
+                  color: hsl(234, 39%, 85%);
+                  left: 3%;
+                  top: 26%;
+                }
+        
+                input[type="checkbox"]:checked {
+                  background: linear-gradient(
+                    to bottom right,
+                    hsl(192, 100%, 67%),
+                    hsl(280, 87%, 65%)
+                  );
+                }
+        
+                .notick {
+                  display: none;
+                }
+                .cross{
+                    position: absolute;
+                    width: 15px;
+                    color: hsl(234, 39%, 85%);
+                    right: 5%;
+                    top:20%;
+                }
+            }
+            hr{
+                margin-top: 20px;
+                border: 0.5px solid  hsl(234, 11%, 52%);
+                
+            }
+            
+          
+
+        }
+    }
+    .button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
+        
+        .filter{
+            display: flex;
+            gap: 10px;
+        }
+        
+        span{
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            color:hsl(234, 11%, 52%);
+            cursor: default;
+
+        }
+        button{
+            padding: 0px;
+            background-color: transparent;
+            border: none;
+            font-family: 'Josefin Sans', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            color:hsl(234, 11%, 52%);
+            cursor: pointer;
+            
+            &:hover{
+                color: hsl(234, 39%, 85%);
+            }
+
+        }
+    }
+}
