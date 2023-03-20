@@ -34,9 +34,9 @@ const GoalList = (props) => {
   };
 
   const handleDelete = (index) => {
-    const filtered = filteredGoals(); // get the filtered array
-    const goalToDelete = filtered[index]; // find the goal to delete
-    const newGoals = props.allGoals.filter((g) => g !== goalToDelete); // delete the goal from the allGoals array
+    const filtered = filteredGoals(); 
+    const goalToDelete = filtered[index]; 
+    const newGoals = props.allGoals.filter((g) => g !== goalToDelete); 
     props.setAllGoals(newGoals);
   };
 
